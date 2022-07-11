@@ -76,12 +76,12 @@ bot.command('/help',(ctx)=>{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
-                [{text:'🎲Clone',url:'t.me/filesaverhelp'}]
+                [{text:'Feedback',url:'t.me/HMTD_Feedback_Bot'}]
             ]
         }    
     })
     if(ctx.from.id==process.env.ADMIN){
-        ctx.reply('https://telegra.ph/Filesaver-Admin-commands-06-05')
+        ctx.reply('https://t.me/HMTD_Links')
     }
 })
 
@@ -307,7 +307,7 @@ bot.on('audio', async(ctx) => {
 bot.command('stats',async(ctx)=>{
     stats = await saver.getUser().then((res)=>{
         if(ctx.from.id==process.env.ADMIN){
-            ctx.reply(`📊Total user: <b> ${res.length}</b>`,{parse_mode:'HTML'})
+            ctx.reply(`📊Total Subscribers: <b> ${res.length}</b>`,{parse_mode:'HTML'})
         }
         
     })
