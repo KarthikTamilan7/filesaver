@@ -77,7 +77,7 @@ bot.command('/help',(ctx)=>{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
-                [{text:'FeedBack',url:'t.me/HMTD_Feedback_Bot'}]
+                [{text:'FeedBack',url:'http://t.me/HMTD_Feedback_Bot'}]
             ]
         }    
     })
